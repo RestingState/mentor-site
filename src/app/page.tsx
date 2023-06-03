@@ -16,34 +16,37 @@ import LogoIcon from './assets/svg/LogoIcon';
 export default function Home() {
   return (
     <main>
-      <section className='flex flex-col items-center px-6 text-center'>
+      <section className='2xl:desktop-content-w flex flex-col items-center px-6 2xl:flex-row-reverse 2xl:justify-between 2xl:gap-10'>
         <Image
+          className='w-80 2xl:w-max'
           src={illustrationIntro}
-          width={327}
-          height={296}
           alt='illustration intro'
         />
-        <h1 className='pb-3'>
-          Bring everyone together to build better products.
-        </h1>
-        <p className='text-base'>
-          Manage makes it simple for software teams to plan day-to-day tasks
-          while keeping the larger team goals in view.
-        </p>
-        <Button className='mt-7' text='Get Started' />
+        <div className='text-center 2xl:max-w-sm 2xl:text-start'>
+          <h1 className='pb-3 2xl:text-start'>
+            Bring everyone together to build better products.
+          </h1>
+          <p className='text-base'>
+            Manage makes it simple for software teams to plan day-to-day tasks
+            while keeping the larger team goals in view.
+          </p>
+          <Button className='mt-7' text='Get Started' />
+        </div>
       </section>
-      <section className='flex flex-col gap-12 pt-20'>
-        <div className='px-7 text-center'>
-          <h2 className='pb-4'>What’s different about Manage?</h2>
+      <section className='2xl:desktop-content-w flex flex-col gap-12 pt-20 2xl:flex-row 2xl:justify-between'>
+        <div className='px-7 text-center 2xl:max-w-sm 2xl:text-start'>
+          <h2 className='pb-4 2xl:text-start'>
+            What’s different about Manage?
+          </h2>
           <p>
             Manage provides all the functionality your team needs, without the
             complexity. Our software is tailor-made for modern digital product
             teams.
           </p>
         </div>
-        <ol className='pl-4'>
+        <ol className='pl-4 2xl:max-w-lg'>
           <li className='pb-12'>
-            <h3 className="mb-3 rounded-s-full bg-very-pale-red before:mr-3 before:inline-block before:rounded-full before:bg-bright-red before:px-6 before:py-2 before:text-very-light-gray before:content-['01']">
+            <h3 className="mb-3 rounded-s-full bg-very-pale-red before:mr-3 before:inline-block before:rounded-full before:bg-bright-red before:px-6 before:py-2 before:text-very-light-gray before:content-['01'] 2xl:relative 2xl:bg-opacity-0 2xl:before:absolute 2xl:before:-left-20 2xl:before:-top-2">
               Track company-wide progress
             </h3>
             <p>
@@ -53,7 +56,7 @@ export default function Home() {
             </p>
           </li>
           <li className='pb-12'>
-            <h3 className="mb-3 rounded-s-full bg-very-pale-red before:mr-3 before:inline-block before:rounded-full before:bg-bright-red before:px-6 before:py-2 before:text-very-light-gray before:content-['02']">
+            <h3 className="mb-3 rounded-s-full bg-very-pale-red before:mr-3 before:inline-block before:rounded-full before:bg-bright-red before:px-6 before:py-2 before:text-very-light-gray before:content-['02'] 2xl:relative 2xl:bg-opacity-0 2xl:before:absolute 2xl:before:-left-20 2xl:before:-top-2">
               Advanced built-in reports
             </h3>
             <p>
@@ -63,7 +66,7 @@ export default function Home() {
             </p>
           </li>
           <li className='pb-12'>
-            <h3 className="mb-3 rounded-s-full bg-very-pale-red before:mr-3 before:inline-block before:rounded-full before:bg-bright-red before:px-6 before:py-2 before:text-very-light-gray before:content-['03']">
+            <h3 className="mb-3 rounded-s-full bg-very-pale-red before:mr-3 before:inline-block before:rounded-full before:bg-bright-red before:px-6 before:py-2 before:text-very-light-gray before:content-['03'] 2xl:relative 2xl:bg-opacity-0 2xl:before:absolute 2xl:before:-left-20 2xl:before:-top-2">
               Everything you need in one place
             </h3>
             <p>
