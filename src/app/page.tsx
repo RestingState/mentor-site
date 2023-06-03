@@ -176,27 +176,27 @@ export default function Home() {
             </ol>
           </nav>
           <div className='flex w-72 justify-between 2xl:order-4 2xl:justify-normal 2xl:gap-3'>
-            <Link href='#'>
+            <Link href='#' aria-label='facebook'>
               <Image
                 src={facebook}
                 className='w-7 2xl:w-5'
                 alt='facebook icon'
               />
             </Link>
-            <Link href='#'>
+            <Link href='#' aria-label='youtube'>
               <Image src={youtube} className='w-7 2xl:w-5' alt='youtube icon' />
             </Link>
-            <Link href='#'>
+            <Link href='#' aria-label='twitter'>
               <Image src={twitter} className='w-7 2xl:w-5' alt='twitter icon' />
             </Link>
-            <Link href='#'>
+            <Link href='#' aria-label='pinterest'>
               <Image
                 src={pinterest}
                 className='w-7 2xl:w-5'
                 alt='pinterest icon'
               />
             </Link>
-            <Link href='#'>
+            <Link href='#' aria-label='instagram'>
               <Image
                 src={instagram}
                 className='w-7 2xl:w-5'
