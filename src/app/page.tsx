@@ -23,7 +23,7 @@ export default function Home() {
           alt='illustration intro'
         />
         <div className='text-center 2xl:max-w-sm 2xl:text-start'>
-          <h1 className='pb-3 2xl:text-start'>
+          <h1 className='pb-3'>
             Bring everyone together to build better products.
           </h1>
           <p className='text-base'>
@@ -35,9 +35,7 @@ export default function Home() {
       </section>
       <section className='2xl:desktop-content-w flex flex-col gap-12 2xl:flex-row 2xl:justify-between'>
         <div className='px-7 text-center 2xl:max-w-sm 2xl:text-start'>
-          <h2 className='pb-4 2xl:text-start'>
-            What’s different about Manage?
-          </h2>
+          <h2 className='pb-4'>What’s different about Manage?</h2>
           <p>
             Manage provides all the functionality your team needs, without the
             complexity. Our software is tailor-made for modern digital product
@@ -78,7 +76,7 @@ export default function Home() {
         </ol>
       </section>
       <section className='flex flex-col'>
-        <h2 className='pb-14'>What they’ve said</h2>
+        <h2 className='pb-14 text-center'>What they’ve said</h2>
         <div className='no-scrollbar mx-auto flex w-80 gap-4 overflow-x-scroll pb-5 2xl:w-full'>
           {[
             {
@@ -135,8 +133,8 @@ export default function Home() {
         <Button className='mx-auto my-10' text='Get Started' />
       </section>
       <section className='bg-bright-red'>
-        <div className='2xl:desktop-content-w flex flex-col items-center gap-6 px-8 py-20 2xl:flex-row 2xl:justify-between 2xl:px-0'>
-          <div className='text-center text-4xl font-medium text-very-light-gray 2xl:max-w-md 2xl:text-start'>
+        <div className='2xl:desktop-content-w flex flex-col items-center gap-6 px-8 py-20 text-center 2xl:flex-row 2xl:justify-between 2xl:px-0 2xl:text-start'>
+          <div className='text-4xl font-medium text-very-light-gray 2xl:max-w-md'>
             Simplify how your team works today.
           </div>
           <Button
