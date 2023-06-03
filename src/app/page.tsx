@@ -17,7 +17,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main>
-      <section className='2xl:desktop-content-w flex flex-col items-center bg-tablet bg-[length:400px] bg-[right_-16rem_bottom] bg-no-repeat px-6 pb-20 2xl:flex-row-reverse 2xl:justify-between 2xl:gap-10 2xl:bg-none'>
+      <section className='container flex flex-col items-center bg-tablet bg-[length:400px] bg-[right_-16rem_bottom] bg-no-repeat pb-20 2xl:flex-row-reverse 2xl:justify-between 2xl:gap-10 2xl:bg-none'>
         <Image
           className='w-80 2xl:w-max'
           src={illustrationIntro}
@@ -34,8 +34,8 @@ export default function Home() {
           <Button className='mt-7' text='Get Started' />
         </div>
       </section>
-      <section className='2xl:desktop-content-w flex flex-col gap-12 2xl:flex-row 2xl:justify-between'>
-        <div className='px-7 text-center 2xl:max-w-sm 2xl:text-start'>
+      <section className='container flex flex-col gap-12 2xl:flex-row 2xl:justify-between'>
+        <div className='text-center 2xl:max-w-sm 2xl:text-start'>
           <h2 className='pb-4'>What’s different about Manage?</h2>
           <p>
             Manage provides all the functionality your team needs, without the
@@ -134,18 +134,15 @@ export default function Home() {
         <Button className='mx-auto my-10' text='Get Started' />
       </section>
       <section className='bg-bright-red'>
-        <div className='2xl:desktop-content-w flex flex-col items-center gap-6 px-8 py-20 text-center 2xl:flex-row 2xl:justify-between 2xl:px-0 2xl:text-start'>
+        <div className='container flex flex-col items-center gap-6 py-20 text-center 2xl:flex-row 2xl:justify-between 2xl:text-start'>
           <div className='text-4xl font-medium text-very-light-gray 2xl:max-w-md'>
             Simplify how your team works today.
           </div>
-          <Button
-            className='bg-very-light-gray !text-bright-red hover:!bg-very-light-gray hover:!text-opacity-60 hover:!opacity-100'
-            text='Get Started'
-          />
+          <Button variant='secondary' text='Get Started' />
         </div>
       </section>
       <footer className='bg-very-dark-blue'>
-        <div className='2xl:desktop-content-w flex flex-col items-center gap-12 pb-5 pt-12 2xl:grid 2xl:grid-cols-3 2xl:gap-x-0 2xl:gap-y-20 2xl:py-12'>
+        <div className='container flex flex-col items-center gap-12 pb-5 pt-12 2xl:grid 2xl:grid-cols-3 2xl:gap-x-0 2xl:gap-y-20 2xl:py-12'>
           <div className='flex gap-2 2xl:order-3 2xl:justify-self-end'>
             <Input placeholder='Updates in your inbox…' />
             <Button text='GO' className='shadow-none' />

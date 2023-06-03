@@ -24,7 +24,8 @@
     scrollbar-width: none;
   }
 
-  .desktop-content-w {
-    @apply mx-auto max-w-7xl;
+  .container {
+    width: min(1110px, 100% - 2rem);
+    margin-inline: auto;
   }
 }

@@ -28,7 +28,7 @@ function MobileNavigation() {
 
   return (
     <nav
-      className='flex items-center justify-between px-5 py-10 2xl:hidden'
+      className='container flex items-center justify-between py-10 2xl:hidden'
       aria-label='Primary'
     >
       <LogoIcon type='primary' className='relative z-10' />
@@ -98,7 +98,7 @@ function MobileModal({ onClose }: MobileModalProps) {
 function DesktopNavigation() {
   return (
     <nav className='hidden 2xl:block' aria-label='Primary'>
-      <div className='desktop-content-w flex items-center justify-between py-12'>
+      <div className='container flex items-center justify-between py-12'>
         <LogoIcon type='primary' />
         <ul className='flex gap-8 font-medium text-dark-blue'>
           <li className='hover:opacity-60'>
