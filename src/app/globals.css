@@ -23,4 +23,8 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
+  .desktop-content-w {
+    @apply mx-auto max-w-7xl;
+  }
 }
