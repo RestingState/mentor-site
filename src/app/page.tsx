@@ -150,7 +150,10 @@ export default function Home() {
             <Input placeholder='Updates in your inbox…' />
             <Button text='GO' className='shadow-none' />
           </div>
-          <nav className='mx-auto max-w-xs text-very-light-gray opacity-80 2xl:order-2 2xl:row-span-2 2xl:mx-0 2xl:max-w-none'>
+          <nav
+            className='mx-auto max-w-xs text-very-light-gray opacity-80 2xl:order-2 2xl:row-span-2 2xl:mx-0 2xl:max-w-none'
+            aria-label='Footer'
+          >
             <ol className='flex flex-wrap'>
               <li className='basis-1/2 pl-10 pt-2 2xl:pl-0'>
                 <Link href='#'>Home</Link>
