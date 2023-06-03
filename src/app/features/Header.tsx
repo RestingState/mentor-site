@@ -96,21 +96,21 @@ function DesktopNavigation() {
   return (
     <nav className='hidden 2xl:block'>
       <div className='desktop-content-w flex items-center justify-between py-12'>
-        <LogoIcon type='primary' className='cursor-pointer' />
+        <LogoIcon type='primary' />
         <ul className='flex gap-8 font-medium text-dark-blue'>
-          <li className='cursor-pointer'>
+          <li className='hover:opacity-60'>
             <Link href='#'>Pricing</Link>
           </li>
-          <li className='cursor-pointer'>
+          <li className='hover:opacity-60'>
             <Link href='#'>Product</Link>
           </li>
-          <li className='cursor-pointer'>
+          <li className='hover:opacity-60'>
             <Link href='#'>About Us</Link>
           </li>
-          <li className='cursor-pointer'>
+          <li className='hover:opacity-60'>
             <Link href='#'>Careers</Link>
           </li>
-          <li className='cursor-pointer'>
+          <li className='hover:opacity-60'>
             <Link href='#'>Community</Link>
           </li>
         </ul>
