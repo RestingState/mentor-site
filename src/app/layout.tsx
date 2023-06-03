@@ -1,8 +1,6 @@
-import Image from 'next/image';
+import Header from './features/Header';
 import './globals.css';
 import { Be_Vietnam_Pro } from 'next/font/google';
-import hamburger from './assets/svg/icon-hamburger.svg';
-import LogoIcon from './assets/svg/LogoIcon';
 
 const beVietnamPro = Be_Vietnam_Pro({
   subsets: ['latin'],
@@ -28,14 +26,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  );
-}
-
-function Header() {
-  return (
-    <header className='flex items-center justify-between px-5 py-10'>
-      <LogoIcon type='primary' />
-      <Image src={hamburger} height={21} width={30} alt='hamburger' />
-    </header>
   );
 }
