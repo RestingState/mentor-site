@@ -79,7 +79,7 @@ export default function Home() {
       </section>
       <section className='flex flex-col'>
         <h2 className='pb-14'>What they’ve said</h2>
-        <div className='no-scrollbar mx-auto flex w-80 gap-4 overflow-x-scroll pb-5'>
+        <div className='no-scrollbar mx-auto flex w-80 gap-4 overflow-x-scroll pb-5 2xl:w-full'>
           {[
             {
               src: avatarAnisha,
@@ -108,7 +108,7 @@ export default function Home() {
           ].map(({ src, name, quote }) => (
             <div
               key={name}
-              className='relative mt-9 w-80 flex-shrink-0 bg-very-light-gray px-6 pb-10 pt-14 text-center'
+              className='relative mt-9 max-w-xs flex-shrink-0 bg-very-light-gray px-6 pb-10 pt-14 text-center 2xl:max-w-md'
             >
               <div className='absolute -top-9 left-0 right-0'>
                 <Image
@@ -125,7 +125,7 @@ export default function Home() {
           ))}
         </div>
 
-        <div className='flex justify-center gap-1'>
+        <div className='flex justify-center gap-1 2xl:hidden'>
           <div className='h-2 w-2 rounded-full border border-bright-red' />
           <div className='h-2 w-2 rounded-full border border-bright-red bg-bright-red' />
           <div className='h-2 w-2 rounded-full border border-bright-red' />
@@ -134,14 +134,16 @@ export default function Home() {
 
         <Button className='mx-auto my-10' text='Get Started' />
       </section>
-      <section className='flex flex-col items-center gap-6 bg-bright-red px-8 py-20'>
-        <div className='text-center text-4xl font-medium text-very-light-gray'>
-          Simplify how your team works today.
+      <section className='bg-bright-red'>
+        <div className='2xl:desktop-content-w flex flex-col items-center gap-6 px-8 py-20 2xl:flex-row 2xl:justify-between'>
+          <div className='text-center text-4xl font-medium text-very-light-gray 2xl:max-w-md 2xl:text-start'>
+            Simplify how your team works today.
+          </div>
+          <Button
+            className='bg-very-light-gray !text-bright-red'
+            text='Get Started'
+          />
         </div>
-        <Button
-          className='bg-very-light-gray !text-bright-red'
-          text='Get Started'
-        />
       </section>
       <footer className='flex flex-col items-center gap-12 bg-very-dark-blue pb-5 pt-12'>
         <div className='flex gap-2'>
