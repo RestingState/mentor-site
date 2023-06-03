@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-center text-4xl font-bold text-dark-blue;
+  }
+  h2 {
+    @apply text-center text-2xl font-bold text-dark-blue;
+  }
+  h3 {
+    @apply font-bold text-dark-blue;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
