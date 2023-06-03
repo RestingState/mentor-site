@@ -12,6 +12,7 @@ import pinterest from './assets/svg/icon-pinterest.svg';
 import instagram from './assets/svg/icon-instagram.svg';
 import Input from './components/Input';
 import LogoIcon from './assets/svg/LogoIcon';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -145,62 +146,68 @@ export default function Home() {
       </section>
       <footer className='bg-very-dark-blue'>
         <div className='2xl:desktop-content-w flex flex-col items-center gap-12 pb-5 pt-12 2xl:grid 2xl:grid-cols-3 2xl:gap-x-0 2xl:gap-y-20 2xl:py-12'>
-          <div className='flex cursor-pointer gap-2 2xl:order-3 2xl:justify-self-end'>
+          <div className='flex gap-2 2xl:order-3 2xl:justify-self-end'>
             <Input placeholder='Updates in your inbox…' />
             <Button text='GO' className='shadow-none' />
           </div>
-          <div className='mx-auto flex max-w-xs flex-wrap text-very-light-gray opacity-80 2xl:order-2 2xl:row-span-2 2xl:mx-0 2xl:max-w-none'>
-            <div className='basis-1/2 cursor-pointer pl-10 pt-2 2xl:pl-0'>
-              Home
-            </div>
-            <div className='basis-1/2 cursor-pointer pl-10 pt-2 2xl:pl-0'>
-              Pricing
-            </div>
-            <div className='basis-1/2 cursor-pointer pl-10 pt-2 2xl:pl-0'>
-              Products
-            </div>
-            <div className='basis-1/2 cursor-pointer pl-10 pt-2 2xl:pl-0'>
-              About Us
-            </div>
-            <div className='basis-1/2 cursor-pointer pl-10 pt-2 2xl:pl-0'>
-              Careers
-            </div>
-            <div className='basis-1/2 cursor-pointer pl-10 pt-2 2xl:pl-0'>
-              Community
-            </div>
-            <div className='basis-1/2 cursor-pointer pl-10 pt-2 2xl:pl-0'>
-              Privacy Policy
-            </div>
-          </div>
+          <nav className='mx-auto max-w-xs text-very-light-gray opacity-80 2xl:order-2 2xl:row-span-2 2xl:mx-0 2xl:max-w-none'>
+            <ol className='flex flex-wrap'>
+              <li className='basis-1/2 pl-10 pt-2 2xl:pl-0'>
+                <Link href='#'>Home</Link>
+              </li>
+              <li className='basis-1/2 pl-10 pt-2 2xl:pl-0'>
+                <Link href='#'>Pricing</Link>
+              </li>
+              <li className='basis-1/2 pl-10 pt-2 2xl:pl-0'>
+                <Link href='#'>Products</Link>
+              </li>
+              <li className='basis-1/2 pl-10 pt-2 2xl:pl-0'>
+                <Link href='#'>About Us</Link>
+              </li>
+              <li className='basis-1/2 pl-10 pt-2 2xl:pl-0'>
+                <Link href='#'>Careers</Link>
+              </li>
+              <li className='basis-1/2 pl-10 pt-2 2xl:pl-0'>
+                <Link href='#'>Community</Link>
+              </li>
+              <li className='basis-1/2 pl-10 pt-2 2xl:pl-0'>
+                <Link href='#'>Privacy Policy</Link>
+              </li>
+            </ol>
+          </nav>
           <div className='flex w-72 justify-between 2xl:order-4 2xl:justify-normal 2xl:gap-3'>
-            <Image
-              src={facebook}
-              className='w-7 cursor-pointer 2xl:w-5'
-              alt='facebook icon'
-            />
-            <Image
-              src={youtube}
-              className='w-7 cursor-pointer 2xl:w-5'
-              alt='youtube icon'
-            />
-            <Image
-              src={twitter}
-              className='w-7 cursor-pointer 2xl:w-5'
-              alt='twitter icon'
-            />
-            <Image
-              src={pinterest}
-              className='w-7 cursor-pointer 2xl:w-5'
-              alt='pinterest icon'
-            />
-            <Image
-              src={instagram}
-              className='w-7 cursor-pointer 2xl:w-5'
-              alt='instagram icon'
-            />
+            <Link href='#'>
+              <Image
+                src={facebook}
+                className='w-7 2xl:w-5'
+                alt='facebook icon'
+              />
+            </Link>
+            <Link href='#'>
+              <Image src={youtube} className='w-7 2xl:w-5' alt='youtube icon' />
+            </Link>
+            <Link href='#'>
+              <Image src={twitter} className='w-7 2xl:w-5' alt='twitter icon' />
+            </Link>
+            <Link href='#'>
+              <Image
+                src={pinterest}
+                className='w-7 2xl:w-5'
+                alt='pinterest icon'
+              />
+            </Link>
+            <Link href='#'>
+              <Image
+                src={instagram}
+                className='w-7 2xl:w-5'
+                alt='instagram icon'
+              />
+            </Link>
           </div>
 
-          <LogoIcon type='secondary' className='cursor-pointer 2xl:order-1' />
+          <Link href='#' className='2xl:order-1'>
+            <LogoIcon type='secondary' />
+          </Link>
 
           <div className='text-xs text-dark-grayish-blue text-opacity-60 2xl:order-5 2xl:justify-self-end'>
             Copyright 2020. All Rights Reserved

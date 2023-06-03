@@ -6,6 +6,7 @@ import hamburger from '../assets/svg/icon-hamburger.svg';
 import close from '../assets/svg/icon-close.svg';
 import { useEffect, useState } from 'react';
 import Button from '../components/Button';
+import Link from 'next/link';
 
 function Header() {
   return (
@@ -70,11 +71,21 @@ function MobileModal({ onClose }: MobileModalProps) {
       <div className='absolute inset-0 bg-gradient-to-b from-very-light-gray to-very-dark-blue opacity-40' />
       <div className='absolute inset-0'>
         <ul className='mx-6 mt-28 flex flex-col items-center gap-4 rounded bg-very-light-gray py-8 font-bold text-dark-blue'>
-          <li>Pricing</li>
-          <li>Product</li>
-          <li>About Us</li>
-          <li>Careers</li>
-          <li>Community</li>
+          <li>
+            <Link href='#'>Pricing</Link>
+          </li>
+          <li>
+            <Link href='#'>Product</Link>
+          </li>
+          <li>
+            <Link href='#'>About Us</Link>
+          </li>
+          <li>
+            <Link href='#'>Careers</Link>
+          </li>
+          <li>
+            <Link href='#'>Community</Link>
+          </li>
         </ul>
       </div>
     </>
@@ -87,11 +98,21 @@ function DesktopNavigation() {
       <div className='desktop-content-w flex items-center justify-between py-12'>
         <LogoIcon type='primary' className='cursor-pointer' />
         <ul className='flex gap-8 font-medium text-dark-blue'>
-          <li className='cursor-pointer'>Pricing</li>
-          <li className='cursor-pointer'>Product</li>
-          <li className='cursor-pointer'>About Us</li>
-          <li className='cursor-pointer'>Careers</li>
-          <li className='cursor-pointer'>Community</li>
+          <li className='cursor-pointer'>
+            <Link href='#'>Pricing</Link>
+          </li>
+          <li className='cursor-pointer'>
+            <Link href='#'>Product</Link>
+          </li>
+          <li className='cursor-pointer'>
+            <Link href='#'>About Us</Link>
+          </li>
+          <li className='cursor-pointer'>
+            <Link href='#'>Careers</Link>
+          </li>
+          <li className='cursor-pointer'>
+            <Link href='#'>Community</Link>
+          </li>
         </ul>
         <Button text='Get Started' />
       </div>
