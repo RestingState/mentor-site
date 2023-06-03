@@ -135,7 +135,7 @@ export default function Home() {
         <Button className='mx-auto my-10' text='Get Started' />
       </section>
       <section className='bg-bright-red'>
-        <div className='2xl:desktop-content-w flex flex-col items-center gap-6 px-8 py-20 2xl:flex-row 2xl:justify-between'>
+        <div className='2xl:desktop-content-w flex flex-col items-center gap-6 px-8 py-20 2xl:flex-row 2xl:justify-between 2xl:px-0'>
           <div className='text-center text-4xl font-medium text-very-light-gray 2xl:max-w-md 2xl:text-start'>
             Simplify how your team works today.
           </div>
@@ -145,32 +145,68 @@ export default function Home() {
           />
         </div>
       </section>
-      <footer className='flex flex-col items-center gap-12 bg-very-dark-blue pb-5 pt-12'>
-        <div className='flex gap-2'>
-          <Input placeholder='Updates in your inbox…' />
-          <Button text='GO' className='shadow-none' />
-        </div>
-        <div className='mx-auto flex max-w-xs flex-wrap text-dark-grayish-blue'>
-          <div className='basis-1/2 pl-10 pt-2'>Home</div>
-          <div className='basis-1/2 pl-10 pt-2'>Pricing</div>
-          <div className='basis-1/2 pl-10 pt-2'>Products</div>
-          <div className='basis-1/2 pl-10 pt-2'>About Us</div>
-          <div className='basis-1/2 pl-10 pt-2'>Careers</div>
-          <div className='basis-1/2 pl-10 pt-2'>Community</div>
-          <div className='basis-1/2 pl-10 pt-2'>Privacy Policy</div>
-        </div>
-        <div className='flex w-72 justify-between'>
-          <Image src={facebook} width={30} height={30} alt='facebook icon' />
-          <Image src={youtube} width={30} height={30} alt='youtube icon' />
-          <Image src={twitter} width={30} height={30} alt='twitter icon' />
-          <Image src={pinterest} width={30} height={30} alt='pinterest icon' />
-          <Image src={instagram} width={30} height={30} alt='instagram icon' />
-        </div>
+      <footer className='bg-very-dark-blue'>
+        <div className='2xl:desktop-content-w flex flex-col items-center gap-12 pb-5 pt-12 2xl:grid 2xl:grid-cols-3 2xl:gap-x-0 2xl:gap-y-20 2xl:py-12'>
+          <div className='flex cursor-pointer gap-2 2xl:order-3 2xl:justify-self-end'>
+            <Input placeholder='Updates in your inbox…' />
+            <Button text='GO' className='shadow-none' />
+          </div>
+          <div className='mx-auto flex max-w-xs flex-wrap text-very-light-gray opacity-80 2xl:order-2 2xl:row-span-2 2xl:mx-0 2xl:max-w-none'>
+            <div className='basis-1/2 cursor-pointer pl-10 pt-2 2xl:pl-0'>
+              Home
+            </div>
+            <div className='basis-1/2 cursor-pointer pl-10 pt-2 2xl:pl-0'>
+              Pricing
+            </div>
+            <div className='basis-1/2 cursor-pointer pl-10 pt-2 2xl:pl-0'>
+              Products
+            </div>
+            <div className='basis-1/2 cursor-pointer pl-10 pt-2 2xl:pl-0'>
+              About Us
+            </div>
+            <div className='basis-1/2 cursor-pointer pl-10 pt-2 2xl:pl-0'>
+              Careers
+            </div>
+            <div className='basis-1/2 cursor-pointer pl-10 pt-2 2xl:pl-0'>
+              Community
+            </div>
+            <div className='basis-1/2 cursor-pointer pl-10 pt-2 2xl:pl-0'>
+              Privacy Policy
+            </div>
+          </div>
+          <div className='flex w-72 justify-between 2xl:order-4 2xl:justify-normal 2xl:gap-3'>
+            <Image
+              src={facebook}
+              className='w-7 cursor-pointer 2xl:w-5'
+              alt='facebook icon'
+            />
+            <Image
+              src={youtube}
+              className='w-7 cursor-pointer 2xl:w-5'
+              alt='youtube icon'
+            />
+            <Image
+              src={twitter}
+              className='w-7 cursor-pointer 2xl:w-5'
+              alt='twitter icon'
+            />
+            <Image
+              src={pinterest}
+              className='w-7 cursor-pointer 2xl:w-5'
+              alt='pinterest icon'
+            />
+            <Image
+              src={instagram}
+              className='w-7 cursor-pointer 2xl:w-5'
+              alt='instagram icon'
+            />
+          </div>
 
-        <LogoIcon type='secondary' />
+          <LogoIcon type='secondary' className='cursor-pointer 2xl:order-1' />
 
-        <div className='text-xs text-dark-grayish-blue text-opacity-60'>
-          Copyright 2020. All Rights Reserved
+          <div className='text-xs text-dark-grayish-blue text-opacity-60 2xl:order-5 2xl:justify-self-end'>
+            Copyright 2020. All Rights Reserved
+          </div>
         </div>
       </footer>
     </main>
