@@ -139,7 +139,7 @@ export default function Home() {
             Simplify how your team works today.
           </div>
           <Button
-            className='bg-very-light-gray !text-bright-red'
+            className='bg-very-light-gray !text-bright-red hover:!bg-very-light-gray hover:!text-opacity-60 hover:!opacity-100'
             text='Get Started'
           />
         </div>
