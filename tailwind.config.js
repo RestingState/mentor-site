@@ -26,7 +26,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        mobile: "url('./images/bg-simplify-section-mobile.svg')",
+        mobile: "url('./assets/svg/bg-simplify-section-mobile.svg')",
+        tablet: "url('./assets/svg/bg-tablet-pattern.svg')",
       },
       screens: {
         '2xl': '1440px',

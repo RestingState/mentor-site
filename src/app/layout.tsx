@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${beVietnamPro.className} text-sm text-dark-grayish-blue`}
+        className={`${beVietnamPro.className} bg-tablet bg-[length:400px] bg-[right_-5rem_top_-5rem] bg-no-repeat text-sm text-dark-grayish-blue 2xl:bg-auto 2xl:bg-[right_-10rem_top_-12rem]`}
       >
         <Header />
         {children}
