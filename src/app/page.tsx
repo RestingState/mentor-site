@@ -16,7 +16,7 @@ import LogoIcon from './assets/svg/LogoIcon';
 export default function Home() {
   return (
     <main>
-      <section className='2xl:desktop-content-w flex flex-col items-center px-6 2xl:flex-row-reverse 2xl:justify-between 2xl:gap-10'>
+      <section className='2xl:desktop-content-w flex flex-col items-center bg-tablet bg-[length:400px] bg-[right_-16rem_bottom] bg-no-repeat px-6 pb-20 2xl:flex-row-reverse 2xl:justify-between 2xl:gap-10 2xl:bg-none'>
         <Image
           className='w-80 2xl:w-max'
           src={illustrationIntro}
@@ -33,7 +33,7 @@ export default function Home() {
           <Button className='mt-7' text='Get Started' />
         </div>
       </section>
-      <section className='2xl:desktop-content-w flex flex-col gap-12 pt-20 2xl:flex-row 2xl:justify-between'>
+      <section className='2xl:desktop-content-w flex flex-col gap-12 2xl:flex-row 2xl:justify-between'>
         <div className='px-7 text-center 2xl:max-w-sm 2xl:text-start'>
           <h2 className='pb-4 2xl:text-start'>
             What’s different about Manage?
